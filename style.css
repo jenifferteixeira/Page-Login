@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    max-width: 414px;
+    gap: 12px;
+    min-height: 100vh;
+    font-weight: 700;
+}
+
+.efeito {
+    width: 365px;
+    height: 280px;
+    background: #ffffff;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.25;
+    filter: blur(24px);
+}
+
+h3 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.divinputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1cap;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.408px;
+    line-height: 22px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+}
+
+input {
+    width: 342px;
+    border: none;
+    height: 42px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: #ffffff;
+    padding: 4px;
+}
+
+
+button {
+    color: white;
+    width: 342px;
+    height: 68px;
+    line-height: 2px;
+    border: none;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    gap: 12px;
+}
+
+.login:hover {
+    background-color: #dd697e;
+}
+
+button:active {
+    opacity: 0.4;
+}
+
+i {
+    font-size: 22px;
+    line-height: 2px;
+}
+
+.login {
+    background-color: #D93856;
+    margin-top: 10px;
+}
+
+.comgoogle {
+    background-color: rgba(255, 255, 255, 0.14);
+}
+.comgoogle:hover{
+    background-color: rgb(102, 89, 89);
+}
+
+.divlink{
+    position: relative;
+    margin-top: 10px;
+}
+a {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: #D93856;
+    bottom: -3px;
+    left: 0;
+    transition: 0.4s ease-in-out;
+}
+a:hover::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #D93856;
+    bottom: -3px;
+    left: 0;
+}
+span{
+    color: white;
+}
+
